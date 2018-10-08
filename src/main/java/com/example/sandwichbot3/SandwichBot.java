@@ -10,11 +10,16 @@ public class SandwichBot {
 			"the space-time continuum", "gravel", "dirt", "sand", "ennui", "the fifth dimension" };
 
 	public String generateSandwich(int ingredients) {
-		chooseIngredient(ingredients);
-		return "";
+		ArrayList<String> choices = chooseIngredient(ingredients);
+		String sandwich = "";
+		for (int i = 0; i < ingredients - 1; i++) {
+			sandwich += choices.get(i) + ", ";
+		}
+		sandwich += choices.get(ingredients - 1);
+		return sandwich;
 	}
 
-	private void chooseIngredient(int ingredients) {
+	private ArrayList<String> chooseIngredient(int ingredients) {
 		ArrayList<String> chosen = new ArrayList<String>();
 		for (int i = 0; i < ingredients; i++) {
 			String choice = chooseOneIngredient();
@@ -23,6 +28,7 @@ public class SandwichBot {
 			}
 			chosen.add(choice);
 		}
+		return chosen;
 	}
 
 	private String chooseOneIngredient() {
