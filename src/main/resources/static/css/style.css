@@ -1,0 +1,64 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+:root {
+
+}
+
+body {
+   /*background-image: url(/images/bread.jpg);*/
+}
+
+.container {
+   width: 40rem;
+   margin: auto;
+}
+
+header{
+	text-align: center;
+	margin-top: 2rem;
+}
+
+h1 {
+	font-family: Verdana;
+	background-color: #ff7768;
+	display: inline;
+	padding: 0 .3rem;
+	border: solid;
+}
+
+#sandwichContainer {
+   background-color: #91bbff;
+   border: solid;
+   margin: 3rem auto;
+   text-align: center;
+}
+
+#sandwichContainer p, form {
+   margin: 1rem;
+}
+
+#sandwichContainer form input[type="submit"] {
+   margin-top: .5rem;
+   padding: .2rem;
+   background-color: white;
+   font-weight: bold;
+   text-transform: uppercase;
+   background-color: #82b1ff;
+   border: outset #7096d8 /*#639eff*/;
+   font-family: Verdana;
+}
+
+#sandwichOutput {
+   margin: 3rem auto;
+   text-align: center;
+   border: solid;
+   background-color: #ff7768;
+}
+
+#sandwichOutput p{
+   margin: 1rem;
+}
